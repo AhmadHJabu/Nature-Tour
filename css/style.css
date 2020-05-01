@@ -65,6 +65,8 @@ body{
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 5px;
+    animation-name: MoveInRight;
+    animation-duration: 23;
 
 }
 
@@ -73,6 +75,10 @@ body{
         opacity: 0;
         transform:translateX(-100px);
       }
+
+      80%{
+          transform: translateX(10px);
+      }
      
       100%{
           opacity: 1;
@@ -80,4 +86,16 @@ body{
      
       }     
 
+}
+
+@keyframes MoveInRight{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(1);
+    }
 }
