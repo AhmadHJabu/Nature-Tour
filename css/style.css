@@ -57,6 +57,7 @@ body{
     letter-spacing: 35px;
     animation-name: MoveInLeft;
     animation-duration: 3s;
+    animation-delay: 2s;
 
 }
 
@@ -66,7 +67,8 @@ body{
     font-weight: 700;
     letter-spacing: 5px;
     animation-name: MoveInRight;
-    animation-duration: 23;
+    animation-duration: 2s;
+    animation-delay: 2s;
 
 }
 
@@ -82,7 +84,7 @@ body{
      
       100%{
           opacity: 1;
-          transform:translate(1);
+          transform:translate(0);
      
       }     
 
@@ -91,11 +93,14 @@ body{
 @keyframes MoveInRight{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translate(-10px);
     }
 
     100%{
         opacity: 1;
-        transform: translate(1);
+        transform: translate(0);
     }
 }
